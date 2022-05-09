@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE Oglasi SYSTEM "oglasi.dtd">
-<note xmlns="http://www.w3schools.com"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.w3schools.com oglasi.xsd">
 <Oglasi>
     <Oglas>
-        <Kategorija tip="alati"></Kategorija>
-        <Datum></Datum>
-        <Cena valuta="RSD"></Cena>
-        <Tekst></Tekst>
-        <Oznaka tip=""></Oznaka>
-        <Email tip="privatni"></Email>
+        <Kategorija tip="alati">Ugaona brusilica</Kategorija>
+        <Datum>23.03.2033.</Datum>
+        <Cena valuta="RSD">500</Cena>
+        <Tekst>Ugaona brusilica 7500rpm</Tekst>
+        <Oznaka tip="rpm">7500</Oznaka>
+        <Email tip="privatni">bojan@gmail.com</Email>
     </Oglas>
 </Oglasi>
