@@ -1,0 +1,29 @@
+[
+    {
+        "ID":0,
+        "Kategorija": "Ugaona brusilica",
+        "Datum": "23.03.2033.",
+        "Cena": {
+            "Valuta":"RSD",
+            "Vrednost":5000.00
+        },
+        "Tekst": "Ugaona brusilica 7500rpm",
+        "Oznaka": [
+            7500,
+            "120mm"
+        ],
+        "Email": [
+            {
+                "tip":"Privatni",
+                "Email":"bojan@gmail.com"
+            },
+            {
+                "tip":"Sluzbeni",
+                "Email":"grujic@gmail.com"
+            }
+        ]
+    }
+
+   
+
+]
