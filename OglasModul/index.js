@@ -11,7 +11,7 @@ function procitajJSON(){
 }
 
 let snimiIzmene=(data)=>{
-    fs.writeFileSync(PATH,JSON.stringify(data))
+    fs.writeFileSync(PATH,JSON.stringify(data,null,4))
 }
 
 exports.vratiOglasZaId=(ID)=>{
@@ -36,13 +36,16 @@ exports.filtrirajOglase=(kat)=>{
     return this.listaOglasa.filter(f=>f.Kategorija==kat)
 }
 
-
+exports.promeniOglas = (oglas) => {
+    this.listaOglasa[this.listaOglasa.findIndex(o => o.id == oglas.id)] = oglas
+    snimiIzmene(this.listaOglasa)
+}
 
 let ogat=
     {
         "ID":0,
         "Kategorija": "alati",
-        "Datum": "23.03.2055.",
+        "Datum": "2022-05-21",
         "Cena": {
             "Valuta":"RSD",
             "Vrednost":500.00
@@ -59,3 +62,4 @@ let ogat=
             }
         ]
     }
+

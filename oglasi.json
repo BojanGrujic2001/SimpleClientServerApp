@@ -1,1 +1,60 @@
-[{"ID":0,"Kategorija":"telefoni","Datum":"2022-05-21","Cena":{"Valuta":"EUR","Vrednost":"555"},"Tekst":"galaxy note 18","Oznaka":"samsung","Email":[{"tip":"sluzbeni","Email":"bojan.grujic2001@gmail.com"}]}]
+[
+    {
+        "ID": 0,
+        "Kategorija": "alati",
+        "Datum": "2022-05-21",
+        "Cena": {
+            "Valuta": "RSD",
+            "Vrednost": 500
+        },
+        "Tekst": "metla",
+        "Oznaka": [
+            1,
+            "120mm"
+        ],
+        "Email": [
+            {
+                "tip": "Sluzbeni",
+                "Email": "grujic@gmail.com"
+            }
+        ]
+    },
+    {
+        "ID": 1,
+        "Kategorija": "elektronika",
+        "Datum": "2022-05-14",
+        "Cena": {
+            "Valuta": "RSD",
+            "Vrednost": "555"
+        },
+        "Tekst": "apple 12",
+        "Oznaka": [
+            " pro super max plus"
+        ],
+        "Email": [
+            {
+                "tip": "sluzbeni",
+                "Email": "orkjskaavtsewipdmd@bvhrs.com"
+            }
+        ]
+    },
+    {
+        "ID": 2,
+        "Kategorija": "elektronika",
+        "Datum": "2022-06-09",
+        "Cena": {
+            "Valuta": "RSD",
+            "Vrednost": "555"
+        },
+        "Tekst": "xiaomi 11 note ",
+        "Oznaka": [
+            "samsung"
+        ],
+        "Email": [
+            {
+                "tip": "sluzbeni",
+                "Email": "orkjskaavtsewipdmd@bvhrs.com"
+            }
+        ]
+    }
+]

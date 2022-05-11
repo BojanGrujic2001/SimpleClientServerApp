@@ -7,7 +7,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 app.get('/',(request, response)=>{
-    response.send("Server OGLASI radi");
+    response.redirect('/svioglasi')
 });
 
 app.get('/svioglasi',(request, response)=>{
@@ -32,7 +32,9 @@ app.get('/filtrirajPoKategoriji',(request,response)=>{
     response.send(oglasimodul.filtrirajOglase(request.query["kat"]))
 })
 
-
+app.put('/izmeniOglas',(request,response)=>{
+    oglasimodul.promeniOglas(request.body)
+})
 
 app.listen(port,()=>{console.log(`startovan server na portu ${port}`)});
 

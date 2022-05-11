@@ -83,7 +83,9 @@ app.post("/snimioglas",(req,res)=>{
             Vrednost:req.body.cena
         },
         Tekst:req.body.text,
-        Oznaka:req.body.Oznake,
+        Oznaka:[
+            req.body.Oznake
+        ],
         Email:[{
             tip:req.body.tipemail,
             Email:req.body.email
