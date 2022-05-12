@@ -1,97 +1,69 @@
 [
     {
-        "ID": 0,
-        "Kategorija": "alati",
-        "Datum": "2022-05-21",
+        "ID": "0",
+        "Kategorija": "elektronika",
+        "Datum": "2022-06-01",
         "Cena": {
-            "Valuta": "RSD",
-            "Vrednost": 500
+            "Valuta": "EUR",
+            "Vrednost": "55"
         },
-        "Tekst": "metla",
+        "Tekst": "METAK",
         "Oznaka": [
-            1,
-            "120mm"
+            {
+                "oz": "12mm"
+            },
+            {
+                "oz": "bam"
+            },
+            {
+                "oz": "HELP"
+            },
+            {
+                "oz": ""
+            }
         ],
         "Email": [
             {
-                "tip": "Sluzbeni",
+                "tip": "privatni",
+                "Email": "sad@gmail.com"
+            },
+            {
+                "tip": "privatni",
                 "Email": "grujic@gmail.com"
             }
         ]
     },
     {
-        "ID": 1,
-        "Kategorija": "elektronika",
-        "Datum": "2022-05-14",
+        "ID": "01",
+        "Kategorija": "automobili",
+        "Datum": "2022-05-21",
         "Cena": {
             "Valuta": "RSD",
-            "Vrednost": "555"
+            "Vrednost": "55"
         },
-        "Tekst": "apple 12",
+        "Tekst": "METAK",
         "Oznaka": [
-            " pro super max plus"
-        ],
-        "Email": [
             {
-                "tip": "sluzbeni",
-                "Email": "orkjskaavtsewipdmd@bvhrs.com"
+                "oz": "9mm"
+            },
+            {
+                "oz": "2 kupatila"
+            },
+            {
+                "oz": ""
+            },
+            {
+                "oz": ""
             }
-        ]
-    },
-    {
-        "ID": "2",
-        "Kategorija": "elektronika",
-        "Datum": "2022-06-09",
-        "Cena": {
-            "Valuta": "EUR",
-            "Vrednost": "555"
-        },
-        "Tekst": "xiaomi",
-        "Oznaka": [
-            "samsung"
         ],
         "Email": [
             {
                 "tip": "privatni",
-                "Email": "orkjskaavtsewipdmd@bvhrs.com"
-            }
-        ]
-    },
-    {
-        "ID": 3,
-        "Kategorija": "automobili",
-        "Datum": "2022-06-10",
-        "Cena": {
-            "Valuta": "RSD",
-            "Vrednost": "555"
-        },
-        "Tekst": "xiaomi 11 note ",
-        "Oznaka": [
-            "samsung"
-        ],
-        "Email": [
+                "Email": "bojan@gmail.com"
+            },
             {
                 "tip": "privatni",
-                "Email": "roqfryyazopqhblbyh@kvhrs.com"
-            }
-        ]
-    },
-    {
-        "ID": "4",
-        "Kategorija": "automobili",
-        "Datum": "2022-06-30",
-        "Cena": {
-            "Valuta": "EUR",
-            "Vrednost": "6000"
-        },
-        "Tekst": "dvorecna",
-        "Oznaka": [
-            "jednorecnarec"
-        ],
-        "Email": [
-            {
-                "tip": "privatni",
-                "Email": "lollol@gmail.com"
+                "Email": ""
             }
         ]
     }

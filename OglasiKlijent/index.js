@@ -27,8 +27,8 @@ app.get("/oglasi",(req,res)=>{
             <td>${element.Cena.Valuta}</td>
             <td>${element.Cena.Vrednost}</td>
             <td>${element.Tekst}</td>
-            <td>${element.Oznaka}</td>
-            <td>${element.Email[0].Email}</td>
+            <td>${element.Oznaka[0].oz}<br>${element.Oznaka[1].oz}<br>${element.Oznaka[2].oz}<br>${element.Oznaka[3].oz}</td>
+            <td>${element.Email[0].Email}<br>${element.Email[1].Email}</td>
             <td><a href="/izmeni/${element.ID}">Izmeni</a></td>
             <td><a href="/obrisi/${element.ID}">Obrisi</a></td>
             </tr>`
@@ -51,8 +51,8 @@ app.post("/filtriraj",(req,res)=>{
             <td>${element.Cena.Valuta}</td>
             <td>${element.Cena.Vrednost}</td>
             <td>${element.Tekst}</td>
-            <td>${element.Oznaka}</td>
-            <td>${element.Email[0].Email}</td>
+            <td>${element.Oznaka[0].oz}<br>${element.Oznaka[1].oz}<br>${element.Oznaka[2].oz}<br>${element.Oznaka[3].oz}</td>
+            <td>${element.Email[0].Email}<br>${element.Email[1].Email}</td>
             <td><a href="/izmeni/${element.ID}">Izmeni</a></td>
             <td><a href="/obrisi/${element.ID}">Obrisi</a></td>
             </tr>`
@@ -83,12 +83,18 @@ app.post("/snimioglas",(req,res)=>{
             Vrednost:req.body.cena
         },
         Tekst:req.body.text,
-        Oznaka:[
-            req.body.Oznake
+        Oznaka:[{oz:req.body.Oznake1},
+            {oz:req.body.Oznake2},
+            {oz:req.body.Oznake3},
+            {oz:req.body.Oznake4}
         ],
         Email:[{
-            tip:req.body.tipemail,
-            Email:req.body.email
+            tip:req.body.tipemail1,
+            Email:req.body.email1
+        },
+        {
+            tip:req.body.tipemail2,
+            Email:req.body.email2
         }]
     })
     res.redirect("/oglasi");
@@ -119,6 +125,7 @@ app.get("/izmeni/:id",(req,res)=>{
             <br>
             <input type="number" name="cena" value=${response.data.Cena.Vrednost}>
             <select name="valuta">
+                <option value="${response.data.Cena.Valuta}">${response.data.Cena.Valuta}</option>
                 <option value="RSD">RSD</option>
                 <option value="EUR">EUR</option>
                 <option value="AUD">AUD</option>
@@ -131,11 +138,29 @@ app.get("/izmeni/:id",(req,res)=>{
             <input type="text" name="text" value=${response.data.Tekst}>
             <br>
             <br>
-            <input type="text" name="Oznake" value=${response.data.Oznaka[0]}>
+            <input type="text" name="Oznake1" value=${response.data.Oznaka[0].oz}>
             <br>
             <br>
-            <input type="text" name="email" value=${response.data.Email[0].Email}>
-            <select name="tipemail">
+            <input type="text" name="Oznake2" value=${response.data.Oznaka[1].oz}>
+            <br>
+            <br>
+            <input type="text" name="Oznake3" value=${response.data.Oznaka[2].oz}>
+            <br>
+            <br>
+            <input type="text" name="Oznake4" value=${response.data.Oznaka[3].oz}>
+            <br>
+            <br>
+            <input type="text" name="email1" value=${response.data.Email[0].Email}>
+            <select name="tipemail1">
+                <option value="${response.data.Email[0].tip}">${response.data.Email[0].tip}</option>
+                <option value="privatni">Privatni</option>
+                <option value="sluzbeni">Sluzbeni</option>
+            </select>
+            <br>
+            <br>
+            <input type="text" name="email2" value=${response.data.Email[1].Email}>
+            <select name="tipemail2">
+                <option value="${response.data.Email[1].tip}">${response.data.Email[1].tip}</option>
                 <option value="privatni">Privatni</option>
                 <option value="sluzbeni">Sluzbeni</option>
             </select>
@@ -158,12 +183,18 @@ app.post("/izmeniOglas",(req,res)=>{
             Vrednost:req.body.cena
         },
         Tekst:req.body.text,
-        Oznaka:[
-            req.body.Oznake
+        Oznaka:[{oz:req.body.Oznake1},
+            {oz:req.body.Oznake2},
+            {oz:req.body.Oznake3},
+            {oz:req.body.Oznake4}
         ],
         Email:[{
-            tip:req.body.tipemail,
-            Email:req.body.email
+            tip:req.body.tipemail1,
+            Email:req.body.email1
+        },
+        {
+            tip:req.body.tipemail2,
+            Email:req.body.email2
         }]
     })
     res.redirect("/oglasi");
