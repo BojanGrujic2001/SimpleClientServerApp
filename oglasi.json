@@ -39,9 +39,28 @@
         ]
     },
     {
-        "ID": 2,
+        "ID": "2",
         "Kategorija": "elektronika",
         "Datum": "2022-06-09",
+        "Cena": {
+            "Valuta": "EUR",
+            "Vrednost": "555"
+        },
+        "Tekst": "xiaomi",
+        "Oznaka": [
+            "samsung"
+        ],
+        "Email": [
+            {
+                "tip": "privatni",
+                "Email": "orkjskaavtsewipdmd@bvhrs.com"
+            }
+        ]
+    },
+    {
+        "ID": 3,
+        "Kategorija": "automobili",
+        "Datum": "2022-06-10",
         "Cena": {
             "Valuta": "RSD",
             "Vrednost": "555"
@@ -52,8 +71,27 @@
         ],
         "Email": [
             {
-                "tip": "sluzbeni",
-                "Email": "orkjskaavtsewipdmd@bvhrs.com"
+                "tip": "privatni",
+                "Email": "roqfryyazopqhblbyh@kvhrs.com"
+            }
+        ]
+    },
+    {
+        "ID": "4",
+        "Kategorija": "automobili",
+        "Datum": "2022-06-30",
+        "Cena": {
+            "Valuta": "EUR",
+            "Vrednost": "6000"
+        },
+        "Tekst": "dvorecna",
+        "Oznaka": [
+            "jednorecnarec"
+        ],
+        "Email": [
+            {
+                "tip": "privatni",
+                "Email": "lollol@gmail.com"
             }
         ]
     }

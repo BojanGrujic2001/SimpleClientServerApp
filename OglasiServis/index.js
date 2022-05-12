@@ -32,7 +32,7 @@ app.get('/filtrirajPoKategoriji',(request,response)=>{
     response.send(oglasimodul.filtrirajOglase(request.query["kat"]))
 })
 
-app.put('/izmeniOglas',(request,response)=>{
+app.post('/izmeniOglas',(request,response)=>{
     oglasimodul.promeniOglas(request.body)
 })
 

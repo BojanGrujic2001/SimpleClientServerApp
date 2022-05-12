@@ -37,7 +37,7 @@ exports.filtrirajOglase=(kat)=>{
 }
 
 exports.promeniOglas = (oglas) => {
-    this.listaOglasa[this.listaOglasa.findIndex(o => o.id == oglas.id)] = oglas
+    this.listaOglasa[this.listaOglasa.findIndex(o => o.ID == oglas.ID)] = oglas
     snimiIzmene(this.listaOglasa)
 }
 

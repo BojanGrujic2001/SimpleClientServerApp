@@ -96,4 +96,77 @@ app.post("/snimioglas",(req,res)=>{
 
 
 
+
+app.get("/izmeni/:id",(req,res)=>{
+    axios.get(`http://localhost:3000/getoglasbyid/${req.params["id"]}`).then(response=>{
+      
+            let prikaz=`<label>Izaberite Kategoriju Proizvoda Za Izmenu</label>
+            <br>
+            <input type="number" name="id" value=${response.data.ID} hidden>
+            <br>
+            <select name="kat">
+                <option value="${response.data.Kategorija}">${response.data.Kategorija}</option>
+                <option value="automobili">automobili</option>
+                <option value="stanovi">stanovi</option>
+                <option value="alati">alati</option>
+                <option value="elektronika">elektronika</option>
+                <option value="telefoni">telefoni</option>
+            </select>
+            <br>
+            <br>
+            <input type="date" name="vreme" value=${response.data.Datum}>
+            <br>
+            <br>
+            <input type="number" name="cena" value=${response.data.Cena.Vrednost}>
+            <select name="valuta">
+                <option value="RSD">RSD</option>
+                <option value="EUR">EUR</option>
+                <option value="AUD">AUD</option>
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="BAM">BAM</option>
+            </select>
+            <br>
+            <br>
+            <input type="text" name="text" value=${response.data.Tekst}>
+            <br>
+            <br>
+            <input type="text" name="Oznake" value=${response.data.Oznaka[0]}>
+            <br>
+            <br>
+            <input type="text" name="email" value=${response.data.Email[0].Email}>
+            <select name="tipemail">
+                <option value="privatni">Privatni</option>
+                <option value="sluzbeni">Sluzbeni</option>
+            </select>
+            <br>
+            <br>`
+        res.send(procitajPogledZaNaziv('izmena').replace("#{data}",prikaz))
+    })
+    .catch(error=>{
+        console.log(error)
+    })
+});
+
+app.post("/izmeniOglas",(req,res)=>{
+    axios.post("http://localhost:3000/izmeniOglas",{
+        ID:req.body.id,
+        Kategorija:req.body.kat,
+        Datum:req.body.vreme,
+        Cena:{
+            Valuta:req.body.valuta,
+            Vrednost:req.body.cena
+        },
+        Tekst:req.body.text,
+        Oznaka:[
+            req.body.Oznake
+        ],
+        Email:[{
+            tip:req.body.tipemail,
+            Email:req.body.email
+        }]
+    })
+    res.redirect("/oglasi");
+})
+
 app.listen(port,()=>{console.log(`klijent na portu ${port}`)});
