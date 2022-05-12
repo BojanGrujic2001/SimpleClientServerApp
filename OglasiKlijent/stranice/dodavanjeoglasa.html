@@ -12,9 +12,11 @@
         <a href="/dodajoglas">Dodaj oglas</a>
     </nav>
 <br>
-    <form action="/snimioglas" method="post">
+<br>
+<h1>Dodajte Oglas</h1>
+<br>
+    <form action="/snimioglas" method="post" id="forma">
         <label>Izaberite Kategoriju Proizvoda</label>
-        <br>
         <br>
         <select name="kat">
             <option value="automobili">automobili</option>
@@ -25,10 +27,14 @@
         </select>
         <br>
         <br>
-        <input type="date" name="vreme">
+        <label for="">Unesite Datum Isteka Oglasa</label>
+        <br>
+        <input type="date" name="vreme" required>
         <br>
         <br>
-        <input type="number" name="cena" placeholder="Unesite cenu">
+        <label for="">Unesite Cenu</label>
+        <br>
+        <input type="number" name="cena" placeholder="Unesite cenu" min="1" required>
         <select name="valuta">
             <option value="RSD">RSD</option>
             <option value="EUR">EUR</option>
@@ -39,8 +45,12 @@
         </select>
         <br>
         <br>
-        <input type="text" name="text" placeholder="Unesite tekst">
+        <label for="">Unesite Tekst Oglasa</label>
         <br>
+        <input type="text" name="text" placeholder="Unesite tekst" required>
+        <br>
+        <br>
+        <label for="">Unesite Oznake</label>
         <br>
         <input type="text" name="Oznake1" placeholder="Unesite oznake">
         <br>
@@ -54,7 +64,9 @@
         <input type="text" name="Oznake4" placeholder="Unesite oznake">
         <br>
         <br>
-        <input type="text" name="email1" placeholder="Unesite vas email">
+        <label for="">Unesite Vasu Email Adresu</label>
+        <br>
+        <input type="text" name="email1" placeholder="Unesite vas email" required>
         <select name="tipemail1">
             <option value="privatni">Privatni</option>
             <option value="sluzbeni">Sluzbeni</option>
@@ -68,7 +80,40 @@
         </select>
         <br>
         <br>
-        <button type="submit">Dodaj Oglas</button>
+        <button onclick="Provera()" id="dgmDodaj">Dodaj Oglas</button>
     </form>
+
+
+
+
+<script>
+
+function Provera(){
+    let tekst= document.getElementsByName("text")[0].value;
+    let prviEmail=document.getElementsByName("email1");
+    let drugiEmail=document.getElementsByName("email2");
+    let proveraEmaila=/[^@]+@[^\.]+\..+/
+
+
+    if(tekst.length>180 || tekst.length<20){
+        alert("Tekst nije odgovarajuce duzine. Tekst mora biti duzi od 20 karaktera i manji od 180 karaktera. Vas broj karaktera: "+tekst.length);
+    }
+
+    if(!(prviEmail.match(proveraEmaila))){
+        alert("Prvi Email nije validan");
+    }
+
+    if(!drugiEmail.match(proveraEmaila)&&drugiEmail!=""){
+        alert("Drugi Email nije validan")
+    }
+
+    document.getElementById("forma").submit()
+}
+
+
+</script>
+
+
+
 </body>
 </html>

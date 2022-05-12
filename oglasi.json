@@ -1,22 +1,22 @@
 [
     {
-        "ID": "0",
+        "ID": 0,
         "Kategorija": "elektronika",
-        "Datum": "2022-06-01",
+        "Datum": "2022-05-31",
         "Cena": {
-            "Valuta": "EUR",
-            "Vrednost": "55"
+            "Valuta": "RSD",
+            "Vrednost": "555"
         },
-        "Tekst": "METAK",
+        "Tekst": "xiaomi",
         "Oznaka": [
             {
-                "oz": "12mm"
+                "oz": "max"
             },
             {
-                "oz": "bam"
+                "oz": ""
             },
             {
-                "oz": "HELP"
+                "oz": ""
             },
             {
                 "oz": ""
@@ -29,25 +29,25 @@
             },
             {
                 "tip": "privatni",
-                "Email": "grujic@gmail.com"
+                "Email": ""
             }
         ]
     },
     {
-        "ID": "01",
+        "ID": 1,
         "Kategorija": "automobili",
-        "Datum": "2022-05-21",
+        "Datum": "2022-05-25",
         "Cena": {
-            "Valuta": "RSD",
-            "Vrednost": "55"
+            "Valuta": "EUR",
+            "Vrednost": "555"
         },
-        "Tekst": "METAK",
+        "Tekst": "Ugaona Brusilica",
         "Oznaka": [
             {
                 "oz": "9mm"
             },
             {
-                "oz": "2 kupatila"
+                "oz": "bam"
             },
             {
                 "oz": ""
@@ -59,7 +59,143 @@
         "Email": [
             {
                 "tip": "privatni",
-                "Email": "bojan@gmail.com"
+                "Email": "privatni@gmail.com"
+            },
+            {
+                "tip": "privatni",
+                "Email": ""
+            }
+        ]
+    },
+    {
+        "ID": 2,
+        "Kategorija": "telefoni",
+        "Datum": "2022-05-24",
+        "Cena": {
+            "Valuta": "EUR",
+            "Vrednost": "120"
+        },
+        "Tekst": "neka",
+        "Oznaka": [
+            {
+                "oz": "4"
+            },
+            {
+                "oz": "AAAAAAAAAAAA"
+            },
+            {
+                "oz": ""
+            },
+            {
+                "oz": ""
+            }
+        ],
+        "Email": [
+            {
+                "tip": "privatni",
+                "Email": "tel@gmail.com"
+            },
+            {
+                "tip": "privatni",
+                "Email": ""
+            }
+        ]
+    },
+    {
+        "ID": 3,
+        "Kategorija": "telefoni",
+        "Datum": "2022-06-09",
+        "Cena": {
+            "Valuta": "EUR",
+            "Vrednost": "88"
+        },
+        "Tekst": "xiaomi",
+        "Oznaka": [
+            {
+                "oz": "9mm"
+            },
+            {
+                "oz": "4"
+            },
+            {
+                "oz": ""
+            },
+            {
+                "oz": ""
+            }
+        ],
+        "Email": [
+            {
+                "tip": "privatni",
+                "Email": "sad@gmail.som"
+            },
+            {
+                "tip": "privatni",
+                "Email": ""
+            }
+        ]
+    },
+    {
+        "ID": 4,
+        "Kategorija": "automobili",
+        "Datum": "2022-05-25",
+        "Cena": {
+            "Valuta": "RSD",
+            "Vrednost": "88"
+        },
+        "Tekst": "Ugaona Brusilica",
+        "Oznaka": [
+            {
+                "oz": "max velicina kamena 120mm"
+            },
+            {
+                "oz": ""
+            },
+            {
+                "oz": ""
+            },
+            {
+                "oz": ""
+            }
+        ],
+        "Email": [
+            {
+                "tip": "privatni",
+                "Email": "sta@gmail.som"
+            },
+            {
+                "tip": "privatni",
+                "Email": ""
+            }
+        ]
+    },
+    {
+        "ID": 5,
+        "Kategorija": "automobili",
+        "Datum": "2022-05-28",
+        "Cena": {
+            "Valuta": "RSD",
+            "Vrednost": "88"
+        },
+        "Tekst": "METAK",
+        "Oznaka": [
+            {
+                "oz": "9mm"
+            },
+            {
+                "oz": ""
+            },
+            {
+                "oz": ""
+            },
+            {
+                "oz": ""
+            }
+        ],
+        "Email": [
+            {
+                "tip": "privatni",
+                "Email": ""
             },
             {
                 "tip": "privatni",

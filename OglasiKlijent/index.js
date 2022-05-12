@@ -106,8 +106,7 @@ app.post("/snimioglas",(req,res)=>{
 app.get("/izmeni/:id",(req,res)=>{
     axios.get(`http://localhost:3000/getoglasbyid/${req.params["id"]}`).then(response=>{
       
-            let prikaz=`<label>Izaberite Kategoriju Proizvoda Za Izmenu</label>
-            <br>
+            let prikaz=`<label>Izaberite Kategoriju Proizvoda</label>
             <input type="number" name="id" value=${response.data.ID} hidden>
             <br>
             <select name="kat">
@@ -120,10 +119,14 @@ app.get("/izmeni/:id",(req,res)=>{
             </select>
             <br>
             <br>
-            <input type="date" name="vreme" value=${response.data.Datum}>
+            <label for="">Unesite Datum Isteka Oglasa</label>
+            <br>
+            <input type="date" name="vreme" value=${response.data.Datum} required>
             <br>
             <br>
-            <input type="number" name="cena" value=${response.data.Cena.Vrednost}>
+            <label for="">Unesite Cenu</label>
+            <br>
+            <input type="number" name="cena" value=${response.data.Cena.Vrednost}  min="1" required>
             <select name="valuta">
                 <option value="${response.data.Cena.Valuta}">${response.data.Cena.Valuta}</option>
                 <option value="RSD">RSD</option>
@@ -135,8 +138,12 @@ app.get("/izmeni/:id",(req,res)=>{
             </select>
             <br>
             <br>
-            <input type="text" name="text" value=${response.data.Tekst}>
+            <label for="">Unesite Tekst Oglasa</label>
             <br>
+            <input type="text" name="text" value=${response.data.Tekst} required>
+            <br>
+            <br>
+            <label for="">Unesite Oznake</label>
             <br>
             <input type="text" name="Oznake1" value=${response.data.Oznaka[0].oz}>
             <br>
@@ -149,6 +156,8 @@ app.get("/izmeni/:id",(req,res)=>{
             <br>
             <input type="text" name="Oznake4" value=${response.data.Oznaka[3].oz}>
             <br>
+            <br>
+            <label for="">Unesite Vasu Email Adresu</label>
             <br>
             <input type="text" name="email1" value=${response.data.Email[0].Email}>
             <select name="tipemail1">
@@ -175,7 +184,7 @@ app.get("/izmeni/:id",(req,res)=>{
 
 app.post("/izmeniOglas",(req,res)=>{
     axios.post("http://localhost:3000/izmeniOglas",{
-        ID:req.body.id,
+        ID:parseInt(req.body.id),
         Kategorija:req.body.kat,
         Datum:req.body.vreme,
         Cena:{
