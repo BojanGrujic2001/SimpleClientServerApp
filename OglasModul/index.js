@@ -41,25 +41,4 @@ exports.promeniOglas = (oglas) => {
     snimiIzmene(this.listaOglasa)
 }
 
-let ogat=
-    {
-        "ID":0,
-        "Kategorija": "alati",
-        "Datum": "2022-05-21",
-        "Cena": {
-            "Valuta":"RSD",
-            "Vrednost":500.00
-        },
-        "Tekst": "metla",
-        "Oznaka": [
-            1,
-            "120mm"
-        ],
-        "Email": [
-            {
-                "tip":"Sluzbeni",
-                "Email":"grujic@gmail.com"
-            }
-        ]
-    }
 

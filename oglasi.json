@@ -172,18 +172,18 @@
     {
         "ID": 5,
         "Kategorija": "automobili",
-        "Datum": "2022-05-28",
+        "Datum": "2022-05-27",
         "Cena": {
             "Valuta": "RSD",
-            "Vrednost": "88"
+            "Vrednost": "1"
         },
         "Tekst": "METAK",
         "Oznaka": [
             {
-                "oz": "9mm"
+                "oz": "max"
             },
             {
-                "oz": ""
+                "oz": "nema"
             },
             {
                 "oz": ""
@@ -195,7 +195,7 @@
         "Email": [
             {
                 "tip": "privatni",
-                "Email": ""
+                "Email": "aads@gmail.com"
             },
             {
                 "tip": "privatni",
