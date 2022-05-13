@@ -35,19 +35,19 @@
     },
     {
         "ID": 1,
-        "Kategorija": "elektronika",
-        "Datum": "2022-05-25",
+        "Kategorija": "telefoni",
+        "Datum": "2022-06-11",
         "Cena": {
-            "Valuta": "EUR",
-            "Vrednost": "555"
+            "Valuta": "USD",
+            "Vrednost": "1500"
         },
-        "Tekst": "Ugaonaaaaaaaaaa",
+        "Tekst": "samsung galaxy s22 ultra pro mega plus pro ultra max",
         "Oznaka": [
             {
-                "oz": "9mm"
+                "oz": "Oled"
             },
             {
-                "oz": "bam"
+                "oz": "120hz"
             },
             {
                 "oz": ""
