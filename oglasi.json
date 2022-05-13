@@ -7,7 +7,7 @@
             "Valuta": "RSD",
             "Vrednost": "555"
         },
-        "Tekst": "xiaomi",
+        "Tekst": "xiao",
         "Oznaka": [
             {
                 "oz": "max"
@@ -25,7 +25,7 @@
         "Email": [
             {
                 "tip": "privatni",
-                "Email": "sad@gmail.com"
+                "Email": "aads@gmail.com"
             },
             {
                 "tip": "privatni",
@@ -35,13 +35,13 @@
     },
     {
         "ID": 1,
-        "Kategorija": "automobili",
+        "Kategorija": "elektronika",
         "Datum": "2022-05-25",
         "Cena": {
             "Valuta": "EUR",
             "Vrednost": "555"
         },
-        "Tekst": "Ugaona Brusilica",
+        "Tekst": "Ugaonaaaaaaaaaa",
         "Oznaka": [
             {
                 "oz": "9mm"
@@ -59,7 +59,7 @@
         "Email": [
             {
                 "tip": "privatni",
-                "Email": "privatni@gmail.com"
+                "Email": "bojangmail.com"
             },
             {
                 "tip": "privatni",
@@ -78,13 +78,13 @@
         "Tekst": "neka",
         "Oznaka": [
             {
-                "oz": "4"
+                "oz": "bbb"
             },
             {
                 "oz": "AAAAAAAAAAAA"
             },
             {
-                "oz": ""
+                "oz": "vam"
             },
             {
                 "oz": ""

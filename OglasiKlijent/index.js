@@ -159,7 +159,7 @@ app.get("/izmeni/:id",(req,res)=>{
             <br>
             <label for="">Unesite Vasu Email Adresu</label>
             <br>
-            <input type="text" name="email1" value=${response.data.Email[0].Email}>
+            <input type="text" name="email1" value=${response.data.Email[0].Email} required>
             <select name="tipemail1">
                 <option value="${response.data.Email[0].tip}">${response.data.Email[0].tip}</option>
                 <option value="privatni">Privatni</option>

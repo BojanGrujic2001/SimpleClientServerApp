@@ -87,7 +87,6 @@
 
 
 <script>
-
 function Provera(){
     let tekst= document.getElementsByName("text")[0].value;
     let prviEmail=document.getElementsByName("email1");
@@ -97,6 +96,7 @@ function Provera(){
 
     if(tekst.length>180 || tekst.length<20){
         alert("Tekst nije odgovarajuce duzine. Tekst mora biti duzi od 20 karaktera i manji od 180 karaktera. Vas broj karaktera: "+tekst.length);
+        return
     }
 
     if(!(prviEmail.match(proveraEmaila))){
@@ -109,8 +109,6 @@ function Provera(){
 
     document.getElementById("forma").submit()
 }
-
-
 </script>
 
 

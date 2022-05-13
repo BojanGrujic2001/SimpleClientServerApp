@@ -14,9 +14,37 @@
     <br>
         <h1>Izmenite Oglas</h1>
     <br>
-    <form action="/izmeniOglas" method="post">
+    <form action="/izmeniOglas" method="post" id="forma">
         #{data}
-        <button type="submit">Izmeni</button>
+        <button onclick="Provera()">Izmeni</button>
     </form>
+
+<script>
+    function Provera(){
+        let tekst= document.getElementsByName("text")[0].value;
+        let prviEmail=document.getElementsByName("email1");
+        let drugiEmail=document.getElementsByName("email2");
+        let proveraEmaila=/[^@]+@[^\.]+\..+/
+    
+    
+        if(tekst.length>180 || tekst.length<20){
+            alert("Tekst nije odgovarajuce duzine. Tekst mora biti duzi od 20 karaktera i manji od 180 karaktera. Vas broj karaktera: "+tekst.length);
+            return false;
+        }
+        else{
+            document.getElementById("forma").submit()
+        }
+    
+        if(!(prviEmail.match(proveraEmaila))){
+            alert("Prvi Email nije validan");
+        }
+    
+        if(!drugiEmail.match(proveraEmaila)&&drugiEmail!=""){
+            alert("Drugi Email nije validan")
+        }
+        
+        
+    }
+</script>
 </body>
 </html>
