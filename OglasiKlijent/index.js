@@ -140,7 +140,7 @@ app.get("/izmeni/:id",(req,res)=>{
             <br>
             <label for="">Unesite Tekst Oglasa</label>
             <br>
-            <input type="text" name="text" value=${response.data.Tekst} required>
+            <input type="text" name="text" value=${response.data.Tekst} required minlength="10" maxlength="180">
             <br>
             <br>
             <label for="">Unesite Oznake</label>

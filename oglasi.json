@@ -1,19 +1,19 @@
 [
     {
         "ID": 0,
-        "Kategorija": "elektronika",
-        "Datum": "2022-05-31",
+        "Kategorija": "stanovi",
+        "Datum": "2022-06-10",
         "Cena": {
-            "Valuta": "RSD",
-            "Vrednost": "555"
+            "Valuta": "EUR",
+            "Vrednost": "1000"
         },
-        "Tekst": "xiao",
+        "Tekst": "Ugaona Garnitura savrsena za vas dom",
         "Oznaka": [
             {
-                "oz": "max"
+                "oz": "visina 9999"
             },
             {
-                "oz": ""
+                "oz": "sirina 9999"
             },
             {
                 "oz": ""
@@ -25,7 +25,7 @@
         "Email": [
             {
                 "tip": "privatni",
-                "Email": "aads@gmail.com"
+                "Email": "sad@gmail.com"
             },
             {
                 "tip": "privatni",
@@ -36,18 +36,18 @@
     {
         "ID": 1,
         "Kategorija": "telefoni",
-        "Datum": "2022-06-11",
+        "Datum": "2022-05-28",
         "Cena": {
-            "Valuta": "USD",
-            "Vrednost": "1500"
+            "Valuta": "EUR",
+            "Vrednost": "1000"
         },
-        "Tekst": "samsung galaxy s22 ultra pro mega plus pro ultra max",
+        "Tekst": "xiaomi 11 note pro super ultra max za evropsko trziste",
         "Oznaka": [
             {
-                "oz": "Oled"
+                "oz": "OLED"
             },
             {
-                "oz": "120hz"
+                "oz": "120Hz"
             },
             {
                 "oz": ""
@@ -59,7 +59,7 @@
         "Email": [
             {
                 "tip": "privatni",
-                "Email": "bojangmail.com"
+                "Email": "privatni@gmail.com"
             },
             {
                 "tip": "privatni",
@@ -70,52 +70,18 @@
     {
         "ID": 2,
         "Kategorija": "telefoni",
-        "Datum": "2022-05-24",
+        "Datum": "2022-05-28",
         "Cena": {
-            "Valuta": "EUR",
-            "Vrednost": "120"
+            "Valuta": "USD",
+            "Vrednost": "1000"
         },
-        "Tekst": "neka",
+        "Tekst": "Apple 12 Pro MAX",
         "Oznaka": [
             {
-                "oz": "bbb"
+                "oz": "120Hz refresh rate "
             },
             {
-                "oz": "AAAAAAAAAAAA"
-            },
-            {
-                "oz": "vam"
-            },
-            {
-                "oz": ""
-            }
-        ],
-        "Email": [
-            {
-                "tip": "privatni",
-                "Email": "tel@gmail.com"
-            },
-            {
-                "tip": "privatni",
-                "Email": ""
-            }
-        ]
-    },
-    {
-        "ID": 3,
-        "Kategorija": "telefoni",
-        "Datum": "2022-06-09",
-        "Cena": {
-            "Valuta": "EUR",
-            "Vrednost": "88"
-        },
-        "Tekst": "xiaomi",
-        "Oznaka": [
-            {
-                "oz": "9mm"
-            },
-            {
-                "oz": "4"
+                "oz": "M1 chip"
             },
             {
                 "oz": ""
@@ -127,75 +93,7 @@
         "Email": [
             {
                 "tip": "privatni",
-                "Email": "sad@gmail.som"
-            },
-            {
-                "tip": "privatni",
-                "Email": ""
-            }
-        ]
-    },
-    {
-        "ID": 4,
-        "Kategorija": "automobili",
-        "Datum": "2022-05-25",
-        "Cena": {
-            "Valuta": "RSD",
-            "Vrednost": "88"
-        },
-        "Tekst": "Ugaona Brusilica",
-        "Oznaka": [
-            {
-                "oz": "max velicina kamena 120mm"
-            },
-            {
-                "oz": ""
-            },
-            {
-                "oz": ""
-            },
-            {
-                "oz": ""
-            }
-        ],
-        "Email": [
-            {
-                "tip": "privatni",
-                "Email": "sta@gmail.som"
-            },
-            {
-                "tip": "privatni",
-                "Email": ""
-            }
-        ]
-    },
-    {
-        "ID": 5,
-        "Kategorija": "automobili",
-        "Datum": "2022-05-27",
-        "Cena": {
-            "Valuta": "RSD",
-            "Vrednost": "1"
-        },
-        "Tekst": "METAK",
-        "Oznaka": [
-            {
-                "oz": "max"
-            },
-            {
-                "oz": "nema"
-            },
-            {
-                "oz": ""
-            },
-            {
-                "oz": ""
-            }
-        ],
-        "Email": [
-            {
-                "tip": "privatni",
-                "Email": "aads@gmail.com"
+                "Email": "asdasd@gmail.com"
             },
             {
                 "tip": "privatni",

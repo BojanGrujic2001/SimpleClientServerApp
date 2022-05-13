@@ -47,7 +47,7 @@
         <br>
         <label for="">Unesite Tekst Oglasa</label>
         <br>
-        <input type="text" name="text" placeholder="Unesite tekst" required>
+        <input type="text" name="text" placeholder="Unesite tekst" required minlength="10" maxlength="180">
         <br>
         <br>
         <label for="">Unesite Oznake</label>
@@ -87,28 +87,21 @@
 
 
 <script>
-function Provera(){
-    let tekst= document.getElementsByName("text")[0].value;
-    let prviEmail=document.getElementsByName("email1");
-    let drugiEmail=document.getElementsByName("email2");
-    let proveraEmaila=/[^@]+@[^\.]+\..+/
+    function Provera(){
+        let tekst= document.getElementsByName("text")[0].value;
+        let prviEmail=document.getElementsByName("email1");
+        let drugiEmail=document.getElementsByName("email2");
+        let proveraEmaila=/[^@]+@[^\.]+\..+/
+        let mailreg=/\S+@\S+\.\S+/
+        let gerexnet=/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
-
-    if(tekst.length>180 || tekst.length<20){
-        alert("Tekst nije odgovarajuce duzine. Tekst mora biti duzi od 20 karaktera i manji od 180 karaktera. Vas broj karaktera: "+tekst.length);
-        return
+        if(prviEmail.match(gerexnet)){
+            document.getElementById("forma").submit()
+        }
+        else{
+            alert("Email nije validan")
+        }
     }
-
-    if(!(prviEmail.match(proveraEmaila))){
-        alert("Prvi Email nije validan");
-    }
-
-    if(!drugiEmail.match(proveraEmaila)&&drugiEmail!=""){
-        alert("Drugi Email nije validan")
-    }
-
-    document.getElementById("forma").submit()
-}
 </script>
 
 

@@ -25,24 +25,15 @@
         let prviEmail=document.getElementsByName("email1");
         let drugiEmail=document.getElementsByName("email2");
         let proveraEmaila=/[^@]+@[^\.]+\..+/
-    
-    
-        if(tekst.length>180 || tekst.length<20){
-            alert("Tekst nije odgovarajuce duzine. Tekst mora biti duzi od 20 karaktera i manji od 180 karaktera. Vas broj karaktera: "+tekst.length);
-            return false;
-        }
-        else{
+        let mailreg=/\S+@\S+\.\S+/
+        let gerexnet=/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+        if(prviEmail.match(gerexnet)){
             document.getElementById("forma").submit()
         }
-    
-        if(!(prviEmail.match(proveraEmaila))){
-            alert("Prvi Email nije validan");
+        else{
+            alert("Email nije validan")
         }
-    
-        if(!drugiEmail.match(proveraEmaila)&&drugiEmail!=""){
-            alert("Drugi Email nije validan")
-        }
-        
         
     }
 </script>
